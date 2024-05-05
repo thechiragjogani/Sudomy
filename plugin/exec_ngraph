@@ -12,7 +12,7 @@
 # file:///home/phil/repos/Sudomy/metactf.com-nGraph_06-17-2022.html
 
 function exec_ngraph() {
-   local _nGraph="lib/lib/nGraph/nGraph.py"
+   local _nGraph="lib/lib/nGraph/new nGraph.py"
    if [[ "$?" -eq "0" ]]; then
       echo -e "\n${BOLD}[${LGREEN}+${RESET}${BOLD}]${RESET} Genereate Visualization For Virtual Host"
       echo -e "---------------------------------------------\n"
