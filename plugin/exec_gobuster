@@ -15,7 +15,7 @@ function exec_gobuster() {
        if [[ "$?" -eq "0" ]]; then
               echo -e "\n${BOLD}[${LGREEN}+${RESET}${BOLD}]${RESET} Running Bruterforce DNS: Gobuster    "
               echo -e "---------------------------------------------\n"
-              ${_GOBUSTER} dns -d ${DOMAIN} --wildcard -qw ${_GOWORDLIST} -o ${OUT_GOBUSTER} | awk '{print $2}' | sed -e 's/^/\t - /'
+              ${PKG_GOBUSTER} dns -d ${DOMAIN} --wildcard -qw ${_GOWORDLIST} -o ${OUT_GOBUSTER} | awk '{print $2}' | sed -e 's/^/\t - /'
               cat ${OUT_GOBUSTER} | awk '{print $2}' >${RESULT_GOBUSTER}
               rm -rf ${OUT_GOBUSTER}
        else
